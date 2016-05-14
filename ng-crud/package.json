@@ -1,0 +1,15 @@
+{
+  "name": "ng-crud",
+  "version": "1.0.0",
+  "description": "angular demo to demonstrate crud operations.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pranav",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "path": "^0.12.7"
+  }
+}
