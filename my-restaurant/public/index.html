@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- angular bootstrap usngin .js file -->
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <title>MyApp AngularJS</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular-animate.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+    <!-- My app -->
+    <script src="./js/app.js" type="text/javascript"></script>
+    <!-- My controllers -->
+    <script src="./js/controllers/RestaurantCtrl.js" type="text/javascript"></script>
+    <script src="./js/controllers/RestaurantEditCtrl.js" type="text/javascript"></script>
+    <script src="./js/controllers/RestaurantDetailCtrl.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">RESTAURANT</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <!--<li><a href="#/restaurants/2/edit">Restaurants Edit</a></li>
+<li><a href="#/restaurants">List</a></li>
+<li><a href="#/restaurants/2">Details</a></li>-->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        No multiple view allowed, 
+        check ui-router
+        <div ng-view>
+                
+
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>

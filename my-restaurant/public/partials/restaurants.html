@@ -1,0 +1,23 @@
+<div>
+    <table class="table table-stripped table-hover">
+        <thead>
+            <tr>
+                <th>#Id</th>
+                <th>Name</th>
+                <th>Street</th>
+            </tr>
+        </thead>
+        <tr>
+            <tbody>
+                <tr ng-repeat="rr in restaurants">
+                    <td ng-click="showDetails(rr.restaurant_id)">{{ rr.restaurant_id }}</td>
+                    <td ng-click="showDetails(rr.restaurant_id)">{{ rr.name }}</td>
+                    <td ng-click="showDetails(rr.restaurant_id)">{{rr.address.street}}</td>
+                    <td>
+                        <button class="btn btn-xs btn-danger" ng-click="deleteRestaurant(rr.restaurant_id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+{{mydata}}
