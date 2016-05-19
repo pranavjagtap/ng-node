@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "pranav",
   "license": "ISC",
   "devDependencies": {
     "mysql": "^2.10.2"
