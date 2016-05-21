@@ -4,7 +4,11 @@ angular.module('MyApp', ['ngRoute', 'ngAnimate'])
 
             'use strict';
             console.log("in main app");
-            $routeProvider.when('/restaurants', {
+            $routeProvider.when('/', {
+                    templateUrl: 'partials/login.html',
+                    controller: 'LoginCtrl'
+                })
+                .when('/restaurants', {
                     templateUrl: 'partials/restaurants.html',
                     controller: 'RestaurantCtrl'
                 })
@@ -18,7 +22,7 @@ angular.module('MyApp', ['ngRoute', 'ngAnimate'])
                 });
 
             $routeProvider.otherwise({
-                redirectTo: '/restaurants'
+                redirectTo: '/'
             });
 
         }]);

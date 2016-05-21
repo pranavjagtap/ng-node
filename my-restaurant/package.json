@@ -9,8 +9,10 @@
   "author": "pranav",
   "license": "BSD",
   "devDependencies": {
+    "body-parser": "~1.14.2",
     "express": "~4.13.3",
+    "jsonwebtoken": "^7.0.0",
     "mongodb": "~2.1.4",
-    "body-parser": "~1.14.2"
+    "mysql": "^2.10.2"
   }
 }

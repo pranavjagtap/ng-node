@@ -1,8 +1,10 @@
 var mongodb = require('mongodb');
 //We need to work with "MongoClient" interface in order to connect to a mongodb server.
 var MongoClient = mongodb.MongoClient;
+
+var config = require('./config');
 // Connection URL. This is where your mongodb server is running.
-var url = 'mongodb://127.0.0.1:27017/test';
+var url = config.mongoConfig.url;
 
 //done
 //For single insertion operation.
@@ -151,7 +153,7 @@ function findRestaurant(id, cb) {
 			} else {
 				console.log('No data found...');
 				return cb(null, null);
-			}			
+			}
 		});
 	});
 }
